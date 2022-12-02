@@ -1,9 +1,15 @@
 :root {
-	--clr-base: #000;
-	--clr-att: #f00;
+	--clr-base: #000000;
+    --clr-text: #222;
+	--clr-att: #FF8E01;
+	--clr-att-hover: #FF5555;
+	--clr-light: #e4e4e;
+    --clr-border: #EAEAEA;
 
-	--min: 320px;
-	--max: 1200px;
+	--min: 375px;
+	--max: 1440px;
+    
+    --paddingContainer: 10px;
 
 	font-size: 10px;
 }
@@ -17,11 +23,14 @@
 			main styles
 \* ----------------------------------- */
 body {
-	color: var(--clr-base, #000);
+	color: var(--clr-base);
 	background: #fff;
+    font-size: 16px;
+    line-height: 20/16;
 }
-p, ul, ol {
+p, ul, ol, table, blockquote, .bq-text {
 	position: relative;
+    margin-bottom: 20/16em;
 	img {
 		max-width: 100%;
 	}
@@ -29,24 +38,45 @@ p, ul, ol {
 		margin-bottom: 0 !important;
 	}
 }
-
 li {
 	position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    page-break-inside: avoid;
+    break-inside: avoid-column;
+    &:before {
+        content: "";
+        display: block;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        position: absolute;
+        top: 10/16em;
+        left: 0;
+        margin-top: -2px;
+        background-color: currentColor;
+    }
+}
+.list-columns {
+    columns: 2;
+    column-gap: 30px;
 }
 a {
-	text-decoration: none;
-	color: var(--clr-att, #f00);
-	&:hover {
-		text-decoration: none;
-		color: var(--clr-att, #f00);
-	}
+    text-decoration: none;
+    color: var(--clr-att);
+    &:hover {
+        text-decoration: none;
+        color: var(--clr-att-hover);
+    }
 }
 a.link-main, .link-main {
-	text-decoration: none;
-	border-bottom: 1px solid;
-	&:hover {
-		border-bottom: none;
-	}
+    text-decoration: none;
+    border-bottom: 1px solid;
+    &:hover {
+    }
+}
+.link-phone {
+    white-space: nowrap;
 }
 h1, .h1-title,
 h2, .h2-title,
@@ -56,7 +86,69 @@ h5, .h5-title,
 h6, .h6-title {
 	display: block;
 	position: relative;
+    font-weight: bold;
+    margin: 0.7em 0;
     &:first-child {
         margin-top: 0;
+    }
+}
+h1, .h1-title {
+    font-size: 4rem;
+    line-height: 48/40;
+    font-weight: 400;
+}
+h2, .h2-title {
+    font-size: 20px;
+    line-height: 24/20;
+    font-weight: bold;
+    margin: 30px 0 20px 0;
+}
+.text-att, .title-att {
+    color: var(--clr-att);
+}
+.text-light, .title-light {
+    color: var(--clr-light);
+}
+.text-center, .title-center {
+    text-align: center;
+}
+@media (max-width: 1399px) {
+    :root {
+        font-size: 9.5px;
+    }
+}
+@media (max-width: 1199px) {
+    :root {
+        font-size: 9px;
+    }
+}
+@media (max-width: 1023px) {
+    :root {
+        font-size: 8px;
+    }
+    body {
+        font-size: 14px;
+    }
+    .list-columns {
+        column-gap: 20px;
+    }
+}
+@media (max-width: 767px) {
+    :root {
+        font-size: 7px;
+    }
+    .list-columns {
+        columns: 1;
+        column-gap: 0;
+    }
+}
+@media (min-width: 1024px) {
+    :root {
+        --paddingContainer: 30px;
+    }
+}
+@media (min-width: 1400px) {
+    :root {
+        --paddingContainer: 51px;
     }
 }

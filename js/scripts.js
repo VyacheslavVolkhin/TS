@@ -20,7 +20,30 @@ $(document).ready(function(){
 	  return this;
 	};
 
-	//popup block
+
+    //btn tgl
+    $('.js-btn-tgl').on('click', function () {
+        $(this).toggleClass('active');
+        return false;
+    })
+
+    //swipebox
+    $('[data-swipebox]').swipebox();
+
+
+    if (!!$('.header').offset()) {
+        $(window).scroll(function () {
+            var windowTop = $(window).scrollTop();
+            if (windowTop > 0) {
+                $('body').addClass('header-fix');
+            } else {
+                $('body').removeClass('header-fix');
+            }
+        });
+    }
+    
+	
+    //popup block
 	$('.js-popup-wrap .js-btn-toggle').on('click', function() {
 		if ($(this).hasClass('active')) {
 			$(this).removeClass('active');
@@ -100,7 +123,50 @@ $(document).ready(function(){
 			$(this).addClass('active').next('.js-tab-content').slideDown(200);
 		}
 	})
-	
+
+
+    //item-tile-catalog
+    if (!!$('.item-tile-catalog').offset()) {
+        $('.item-tile-catalog .tile-slider').slick({
+            dots: true,
+            slidesToShow: 1,
+            variableWidth: false,
+            infinite: true,
+            adaptiveHeight: false,
+            rows: 1,
+            swipeToSlide: true,
+            prevArrow: false,
+            nextArrow: false,
+        });
+    }
+
+    //main-top-box
+    if (!!$('.main-top-box').offset()) {
+        $('.main-top-box .slider').slick({
+            dots: true,
+            slidesToShow: 1,
+            variableWidth: false,
+            infinite: true,
+            adaptiveHeight: true,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear',
+            rows: 1,
+            swipeToSlide: true,
+            prevArrow: false,
+            nextArrow: false,
+            appendDots: $('.slider-numbers, .slider-lines'),
+        });
+        $('.main-top-box .slider').on('afterChange', function (event, slick, currentSlide, nextSlide) {
+            if ($(this).find('.slick-track').find('.slick-active').find('.sl-wrap').hasClass('header-light')) {
+                $('body').addClass('header-light');
+            } else {
+                $('body').removeClass('header-light');
+            }
+        })	
+    }
 });
 
 
