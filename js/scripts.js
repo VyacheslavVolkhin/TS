@@ -31,6 +31,7 @@ $(document).ready(function(){
     $('[data-swipebox]').swipebox();
 
 
+    //header fixed
     if (!!$('.header').offset()) {
         $(window).scroll(function () {
             var windowTop = $(window).scrollTop();
@@ -42,6 +43,34 @@ $(document).ready(function(){
         });
     }
     
+    
+    //about more
+    $('.about-box.open-all .text-hidden-wrap').show(0);
+    $('.about-box.open-all .button-toggle').addClass('active');
+    $('.about-box .button-toggle').on('click', function() {
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active').parents('.about-box').removeClass('open-all').find('.text-hidden-wrap').slideUp(200);
+        } else {
+            $(this).addClass('active').parents('.about-box').addClass('open-all').find('.text-hidden-wrap').slideDown(200);
+        }
+        return false;
+    })
+
+
+    //frm counter   
+    $('.js-counter .js-button-counter-minus').on('click', function () {
+        var cnt = $(this).parents('.js-counter').find('.js-input-counter').val();
+        cnt = parseInt(cnt);
+        if (cnt > 0) {
+            $(this).parents('.js-counter').find('.js-input-counter').val(cnt - 1);
+        }
+        return false;
+    })
+    $('.js-counter .js-button-counter-plus').on('click', function () {
+        var cnt = $(this).parents('.js-counter').find('.js-input-counter').val();
+        $(this).parents('.js-counter').find('.js-input-counter').val(cnt - 1 + 2);
+        return false;
+    })
 	
     //popup block
 	$('.js-popup-wrap .js-btn-toggle').on('click', function() {

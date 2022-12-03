@@ -40,6 +40,7 @@ html {
 }
 .page-full {
 	flex: 1 0 auto;
+    padding-top: 80px;
 }
 .wrap, .footer {
 	// -webkit-transform: translate3d(0,0,0);
@@ -62,6 +63,9 @@ html {
 	&>.cnt-section {
 		flex-shrink: 0;
 	}
+}
+.wrap-inner {
+    padding-top: 71px;
 }
 .nav,
 .header,
@@ -120,6 +124,11 @@ html {
             box-shadow: none;
             &:not(:hover) {
                 border-color: #fff;
+                color: #fff;
+            }
+            &:hover {
+                background-color: var(--clr-att);
+                border-color: var(--clr-att);
                 color: #fff;
             }
         }
@@ -527,6 +536,9 @@ html {
     }
 }
 @media (min-width: 1024px) {
+    .wrap-inner {
+        padding-top: 65px;
+    }
     .header-light:not(.header-fix) {
         .popup-menu-wrap {
             .menu-catalog {

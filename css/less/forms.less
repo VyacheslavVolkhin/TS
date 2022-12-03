@@ -60,7 +60,7 @@ select::-ms-expand {
             color: var(--clr-base);
             background-color: transparent;
         }
-        &:hover, &.active {
+        &:hover {
             .button-ico {
                 filter: brightness(0) invert(1);
             }
@@ -82,9 +82,22 @@ select::-ms-expand {
         }
     }
     &.button-toggle {
+        .button-ico {
+            .t-rotate(180deg);
+        }
+        .button-title {
+            &:before {
+                content: attr(data-show);
+            }
+        }
         &.active {
+            .button-title {
+                &:before {
+                    content: attr(data-hide);
+                }
+            }
             .button-ico {
-                .t-rotate(180deg);
+                .t-rotate(0deg);
             }
         }
     }
