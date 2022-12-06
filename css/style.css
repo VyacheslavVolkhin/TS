@@ -3598,8 +3598,8 @@ select::-ms-expand {
 }
 .btn:hover,
 .btn.active {
-  background-color: var(--clr-att-hover);
-  border-color: var(--clr-att-hover);
+  background-color: var(--clr-att);
+  border-color: var(--clr-att);
   color: #fff;
 }
 .btn .button-ico {
@@ -3658,18 +3658,19 @@ select::-ms-expand {
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
 }
+.btn.button-menu.active,
 .btn.button-menu:hover {
-  border-color: var(--clr-att);
-}
-.btn.button-menu.active {
-  cursor: default;
   border-color: var(--clr-att);
   background-color: var(--clr-att);
   color: #fff;
-  padding: 0 62px 0 15px;
 }
-.btn.button-menu.active .button-count {
+.btn.button-menu.active .button-count,
+.btn.button-menu:hover .button-count {
   opacity: 1;
+}
+.btn.button-menu.active {
+  cursor: default;
+  padding: 0 62px 0 15px;
 }
 .btn.button-menu.active .ico-del {
   display: block;
@@ -3898,12 +3899,14 @@ select::-ms-expand {
   background: #F7F7F7;
   border: 1px solid #F3F3F3;
 }
-.btn-action-ico.button-cat:hover,
+.btn-action-ico.button-cat:hover {
+  background: #F7F7F7;
+  border: 1px solid #F3F3F3;
+}
 .btn-action-ico.button-cat.active {
   background-color: var(--clr-att);
   border-color: var(--clr-att);
 }
-.btn-action-ico.button-cat:hover:before,
 .btn-action-ico.button-cat.active:before {
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);

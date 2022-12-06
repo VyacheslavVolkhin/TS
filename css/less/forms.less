@@ -84,8 +84,8 @@ select::-ms-expand {
         }
     }
     &:hover, &.active {
-        background-color: var(--clr-att-hover);
-        border-color: var(--clr-att-hover);
+        background-color: var(--clr-att);
+        border-color: var(--clr-att);
         color: #fff;
     }
     .button-ico {
@@ -141,18 +141,17 @@ select::-ms-expand {
             margin-top: -20px;
             filter: brightness(0) invert(1);
         }
-        &:hover {
-            border-color: var(--clr-att);
-        }
-        &.active {
-            cursor: default;
+        &.active, &:hover {
             border-color: var(--clr-att);
             background-color: var(--clr-att);
             color: #fff;
-            padding: 0 62px 0 15px;
             .button-count {
                 opacity: 1;
             }
+        }
+        &.active {
+            cursor: default;
+            padding: 0 62px 0 15px;
             .ico-del {
                 display: block;
             }
@@ -382,7 +381,11 @@ select::-ms-expand {
         border-radius: 50%;
         background: #F7F7F7;
         border: 1px solid #F3F3F3;
-        &:hover, &.active {
+        &:hover {
+            background: #F7F7F7;
+            border: 1px solid #F3F3F3;
+        }
+        &.active {
             background-color: var(--clr-att);
             border-color: var(--clr-att);
             &:before {
