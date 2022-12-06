@@ -21,6 +21,7 @@ $(document).ready(function(){
 	};
 
 
+
     //btn tgl
     $('.js-btn-tgl').on('click', function () {
         $(this).toggleClass('active');
@@ -55,6 +56,7 @@ $(document).ready(function(){
         }
         return false;
     })
+    
 
 
     //frm counter   
@@ -199,3 +201,77 @@ $(document).ready(function(){
 });
 
 
+window.onload = function () {
+    //field-password
+    $('.js-password-toggle').on('click', function () {
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            $(this).parent('.js-input').find('.form-input').prop('type', 'password');
+        } else {
+            $(this).addClass('active');
+            $(this).parent('.js-input').find('.form-input').prop('type', 'text');
+        }
+        return false;
+    })
+
+    //field-clear
+    $('.js-button-clear').on('click', function () {
+        $(this).parent('.js-input').find('.form-input').val('').focus();
+        return false;
+    })
+    //field input
+    $('#form-reg button[type="submit"]').on('click', function() {
+        $(this).parents('.frm-inner-wrap').addClass('form-send');
+        return false;
+    })
+    $('.js-input').each(function() {
+        if ($(this).find('.form-input').val() != '') {
+            $(this).addClass('inp-valid')
+        }
+    })
+    $('a[data-step]').on('click', function() {ll
+        let frmStep = $(this).attr('data-step');
+        $(this).parents('.frm-inner-wrap').find('[data-step].active').removeClass('active');
+        $(this).parents('.frm-inner-wrap').find('[data-step="'+frmStep+'"]').addClass('active');
+        return false;
+    })
+    let fieldInput = document.querySelectorAll('.js-input');
+    if (fieldInput.length > 0) {
+        for (i = 0; i < fieldInput.length; i++) {
+            fieldInput[i].querySelector('label').onclick = function () {
+                this.parentElement.classList.add('inp-active');
+                this.parentElement.classList.remove('inp-valid');
+                this.parentElement.querySelector('input').focus();
+            }
+            //input
+            if (fieldInput[i].querySelector('input')) {
+                fieldInput[i].querySelector('input').onfocus = function () {
+                    this.parentElement.classList.add('inp-active');
+                    this.parentElement.classList.remove('inp-valid');
+                }
+                fieldInput[i].querySelector('input').onblur = function () {
+                    this.parentElement.classList.remove('inp-active');
+                    if (this.value.length == "0") {
+                        this.parentElement.classList.remove('inp-valid');
+                    } else {
+                        this.parentElement.classList.add('inp-valid');
+                    }
+                }
+                //select
+            } else if (fieldInput[i].querySelector('select')) {
+                fieldInput[i].querySelector('select').onchange = function () {
+                    this.parentElement.classList.add('inp-active');
+                    this.parentElement.classList.remove('inp-valid');
+                }
+                fieldInput[i].querySelector('select').onblur = function () {
+                    this.parentElement.classList.remove('inp-active');
+                    if (this.options[this.selectedIndex].text === "") {
+                        this.parentElement.classList.remove('inp-valid');
+                    } else {
+                        this.parentElement.classList.add('inp-valid');
+                    }
+                }
+            }
+        }
+    }
+}

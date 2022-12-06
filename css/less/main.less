@@ -61,6 +61,18 @@ li {
     columns: 2;
     column-gap: 30px;
 }
+.list-map {
+    margin-bottom: 8rem;
+    &.list-columns {
+        max-width: 600px;
+    }
+    li {
+        padding: 0;
+        &:before {
+            display: none;
+        }
+    }
+}
 a {
     text-decoration: none;
     color: var(--clr-att);
@@ -152,3 +164,4 @@ h2, .h2-title {
         --paddingContainer: 51px;
     }
 }
+

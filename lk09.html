@@ -114,44 +114,146 @@
 
         <!-- page -->
         <div class="page-full">
-            <h1>Карта сайта</h1>
-            <ul class="list-map">
-                <li><a href="main.html">Main</a></li>
 
-                <li><a href="lk01.html">LK-01 Личные данные</a></li>
-                <li><a href="lk02.html">LK-02 Текущие заказы</a></li>
-                <li><a href="lk03.html">LK-03 История заказов</a></li>
-                <li><a href="lk04.html">LK-04 Отмененные заказы</a></li>
-                <li><a href="lk05.html">LK-05 Вы смотрели</a></li>
-                <li><a href="lk06.html">LK-06 Вы смотрели - пусто</a></li>
-                <li><a href="lk07.html">LK-07 Избранное</a></li>
-                <li><a href="lk08.html">LK-08 Избранное - пусто</a></li>
-                <li><a href="lk09.html">LK-09 Смена пароля</a></li>
-                <li><a href="lk10.html">LK-10 Смена пароля - успешно</a></li>
-                <li><a href="LK11-cart.html">LK-11 Корзина</a></li>
-                <li><a href="LK12-cart-empty.html">LK-12 Корзина - пусто</a></li>
-                <li><a href="LK13-login.html">LK-13 Вход</a></li>
+            <!--breadcrumbs-box-->
+            <div class="breadcrumbs-box">
+                <ol class="menu">
+                    <li><a href="">Главная</a></li>
+                    <li><a href="">Личный кабинет</a></li>
+                    <li><a href="">Смена пароля</a></li>
+                </ol>
+            </div>
+            <!--/breadcrumbs-box-->
 
-                <li><a href="categories.html">Каталог (категории)</a></li>
-                <li><a href="actions.html">Акции</a></li>
-                <li><a href="pays.html">Оплата и доставка</a></li>
-                <li><a href="catalog-discount.html">Каталог - скидки</a></li>
-                <li><a href="catalog-item-second.html">Каталог - Радиаторы</a></li>
-            </ul>
-            <br><br><br><br><br>
-            01 Личные данные.jpg
-            02 Текущие заказы.jpg
-            03 История заказов.jpg
-            04 Отмененные заказы.jpg
-            05 Вы смотрели.jpg
-            06 Вы смотрели-1.jpg
-            07 Избранное.jpg
-            08 Избранное-1.jpg
-            09 Смена пароля.jpg
-            10 Смена пароля-1.jpg
-            11 Пустая корзина.jpg
-            12 Корзина.jpg
-            13 Вход.jpg
+            <!--lk-outer-wrap-->
+            <div class="lk-outer-wrap">
+
+                <!--lk-content-wrap-->
+                <div class="lk-content-wrap">
+
+                    <!--title-box-->
+                    <div class="title-box">
+                        <div class="title-wrap">
+                            <h1 class="h1-title">Смена пароля</h1>
+                        </div>
+                    </div>
+                    <!--/title-box-->
+
+                    <!--lk-form-box-->
+                    <form action="/" class="lk-form-box">
+                        <div class="frm-row">
+                            <div class="frm-field field-half">
+                                <div class="frm-field-input field-large js-input">
+                                    <label class="field-title"><label class="field-title">Введите новый пароль</label></label>
+                                    <input type="text" class="form-input" value="GKJHHLKLJLKJ57987">
+                                    <div class="field-error">Вы неверно ввели пароль</div>
+                                    <a href="" class="btn-action-ico ico-clear field-button-clear js-button-clear"></a>
+                                </div>
+                            </div>
+                            <div class="frm-field field-half">
+                                <div class="frm-field-input field-large js-input">
+                                    <label class="field-title"><label class="field-title">Подтвердите пароль</label></label>
+                                    <input type="text" class="form-input" value="GKJHHLKLJLKJ57987">
+                                    <div class="field-error">Вы неверно ввели пароль</div>
+                                    <a href="" class="btn-action-ico ico-clear field-button-clear js-button-clear"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-row-submit">
+                            <div class="frm-field">
+                                <button type="submit" class="btn button-border">Сохранить</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!--/lk-form-box-->
+
+                </div>
+                <!--/lk-content-wrap-->
+
+                <!--lk-side-wrap-->
+                <div class="lk-side-wrap">
+
+                    <div class="popup-side-menu-wrap js-popup-wrap">
+                        <a href="" class="btn-popup js-btn-toggle">Меню</a>
+                        <div class="popup-content-block js-popup-block">
+                            <a href="" class="btn-popup-close btn-action-ico ico-close js-btn-close"></a>
+                            <div class="page-menu-wrap">
+                                <ul class="menu">
+                                    <li>
+                                        <a href="" class="btn-action-menu button-arrow">
+                                            <span class="button-ico">
+                                                <img src="./img/icons/lk-menu01.svg" alt="">
+                                            </span>
+                                            <span class="button-title">Личные данные</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="btn-action-menu button-arrow">
+                                            <span class="button-ico">
+                                                <img src="./img/icons/lk-menu02.svg" alt="">
+                                            </span>
+                                            <span class="button-title">Текущие заказы <span class="button-count">4</span></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="btn-action-menu button-arrow">
+                                            <span class="button-ico">
+                                                <img src="./img/icons/lk-menu03.svg" alt="">
+                                            </span>
+                                            <span class="button-title">История заказов <span class="button-count">4</span></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="btn-action-menu button-arrow">
+                                            <span class="button-ico">
+                                                <img src="./img/icons/lk-menu04.svg" alt="">
+                                            </span>
+                                            <span class="button-title">Вы смотрели <span class="button-count">1</span></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="btn-action-menu button-arrow">
+                                            <span class="button-ico">
+                                                <img src="./img/icons/lk-menu05.svg" alt="">
+                                            </span>
+                                            <span class="button-title">Избранное <span class="button-count">10</span></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="btn-action-menu button-arrow">
+                                            <span class="button-ico">
+                                                <img src="./img/icons/lk-menu06.svg" alt="">
+                                            </span>
+                                            <span class="button-title">Корзина <span class="button-count">10</span></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="btn-action-menu button-arrow active">
+                                            <span class="button-ico">
+                                                <img src="./img/icons/lk-menu07.svg" alt="">
+                                            </span>
+                                            <span class="button-title">Смена пароля</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="btn-action-menu">
+                                            <span class="button-ico">
+                                                <img src="./img/icons/lk-menu08.svg" alt="">
+                                            </span>
+                                            <span class="button-title">Выйти</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/lk-side-wrap-->
+
+            </div>
+            <!--/lk-outer-wrap-->
+
         </div>
         <!-- /page -->
 

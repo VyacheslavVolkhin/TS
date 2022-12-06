@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Главная</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/swipebox.min.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+</head>
+
+<body>
+    <!-- wrap -->
+    <div class="wrap wrap-inner">
+
+
+        <!-- header -->
+        <header class="header">
+            <div class="inner-wrap">
+                <div class="logo-wrap">
+                    <a href="" class="logo">
+                        <img src="./img/main/logo-main.svg" alt="">
+                    </a>
+                </div>
+                <div class="popup-menu-wrap js-popup-wrap">
+                    <a href="" class="btn-popup btn-action-ico ico-menu js-btn-toggle"></a>
+                    <div class="popup-content-block js-popup-block">
+                        <div class="menu-inner-panel">
+                            <div class="search-wrap">
+                                <form action="/" class="frm-main-search">
+                                    <input type="text" class="form-input" placeholder="Поиск">
+                                </form>
+                            </div>
+                            <div class="menu-wrap">
+                                <ul class="menu">
+                                    <li class="menu-catalog"><a href="" class="btn-menu-main">Каталог товаров</a></li>
+                                    <li><a href="" class="btn-menu-main">Акции</a></li>
+                                    <li><a href="" class="btn-menu-main">Доставка и оплата</a></li>
+                                    <li><a href="" class="btn-menu-main">Контакты</a></li>
+                                </ul>
+                            </div>
+                            <div class="links-wrap">
+                                <div class="link-wrap">
+                                    <a href="">Политика конфиденциальности</a>
+                                </div>
+                                <div class="link-wrap">
+                                    <a href="">Пользовательское соглашение</a>
+                                </div>
+                            </div>
+                            <div class="soc-wrap">
+                                <a href="" class="btn-action-ico button-soc">
+                                    <img src="./img/icons/soc01.svg" alt="">
+                                </a>
+                                <a href="" class="btn-action-ico button-soc">
+                                    <img src="./img/icons/soc02.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="info-wrap">
+                                <p>2022 г. ТеплоСервис. Все права защищены</p>
+                                <p><a href="" class="logo-s"><img src="./img/main/logo-s.svg" alt=""></a></p>
+                            </div>
+                        </div>
+                        <div class="menu-actions-panel">
+                            <a href="" class="btn-menu">
+                                <span class="button-ico">
+                                    <img src="./img/icons/menu-home.svg" alt="">
+                                </span>
+                                <span class="button-title">Главная</span>
+                            </a>
+                            <a href="" class="btn-menu">
+                                <span class="button-ico">
+                                    <img src="./img/icons/menu-user.svg" alt="">
+                                </span>
+                                <span class="button-title">Кабинет</span>
+                            </a>
+                            <a href="" class="btn-menu">
+                                <span class="button-ico">
+                                    <img src="./img/icons/menu-fav.svg" alt="">
+                                </span>
+                                <span class="button-title">Избранное</span>
+                            </a>
+                            <a href="" class="btn-menu">
+                                <span class="button-ico">
+                                    <img src="./img/icons/menu-cart.svg" alt="">
+                                </span>
+                                <span class="button-title">Корзина</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-search-wrap js-popup-wrap">
+                    <a href="" class="btn-popup btn-action-ico ico-search js-btn-toggle"></a>
+                    <div class="popup-content-block js-popup-block">
+                        <form action="/" class="frm-main-search">
+                            <input type="text" class="form-input" placeholder="Поиск">
+                        </form>
+                    </div>
+                </div>
+                <div class="phone-wrap">
+                    <a href="tel:84012384979" class="link-phone">+7 (4012) 38-49-79</a>
+                </div>
+            </div>
+        </header>
+        <!-- /header -->
+
+        <!-- page -->
+        <div class="page-full">
+
+            <!--breadcrumbs-box-->
+            <div class="breadcrumbs-box">
+                <ol class="menu">
+                    <li><a href="">Главная</a></li>
+                    <li><a href="">Личный кабинет</a></li>
+                </ol>
+            </div>
+            <!--/breadcrumbs-box-->
+
+            <!--page-form-box-->
+            <div class="page-form-box">
+                <div class="frm-title-wrap">
+                    <div class="frm-title">Личный кабинет</div>
+                </div>
+                <div class="frm-tabs-wrap js-tabs-nav">
+                    <ul class="menu">
+                        <li><a href="" class="btn button-tab" data-tab="tab-login">Вход</a></li>
+                        <li><a href="" class="btn button-tab active" data-tab="tab-reg">Регистрация</a></li>
+                    </ul>
+                </div>
+                <!--form tab login-->
+                <div class="frm-inner-wrap js-tab-block" data-tab="tab-login">
+                    <form action="/" class="frm-wrap active" data-step="01">
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <div class="frm-field-input js-input">
+                                    <label class="field-title">E-mail</label>
+                                    <input type="email" class="form-input">
+                                    <div class="field-error">Вы неверно ввели email</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <div class="frm-field-input js-input inp-error field-password">
+                                    <label class="field-title">Пароль</label>
+                                    <input type="password" class="form-input" value="test123">
+                                    <a href="" class="btn-action-ico ico-view field-button-view js-password-toggle"></a>
+                                    <div class="field-error">Вы неверно ввели пароль</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-row row-info">
+                            <div class="frm-field">
+                                <div class="frm-select">
+                                    <input type="checkbox" id="login">
+                                    <label for="login">Запомнить меня</label>
+                                </div>
+                            </div>
+                            <div class="frm-field">
+                                <a href="" class="field-link" data-step="02">Забыли пароль?</a>
+                            </div>
+                        </div>
+                        <div class="frm-row-submit">
+                            <div class="frm-field">
+                                <button type="submit" class="btn button-border">Войти</button>
+                            </div>
+                            <div class="frm-field">
+                                <div class="frm-info">Нажимая на кнопку “войти” вы даете согласие на <br><a href="" class="link-main">обработку персональных данных</a></div>
+                            </div>
+                        </div>
+                    </form>
+                    <form action="/" class="frm-wrap" data-step="02">
+                        <div class="frm-row row-text">
+                            <div class="frm-field">
+                                <div class="frm-text">Для получения нового пароля нужно вписать в поле ниже адрес электронной почты, указанный при регистрации</div>
+                            </div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <div class="frm-row">
+                                    <div class="frm-field">
+                                        <div class="frm-field-input js-input">
+                                            <label class="field-title">E-mail</label>
+                                            <input type="email" class="form-input" value="mail@mail.ru">
+                                            <div class="field-error">Вы неверно ввели email</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-row-submit">
+                            <div class="frm-field">
+                                <button type="submit" class="btn">Восстановить пароль</button>
+                            </div>
+                            <div class="frm-field">
+                                <a href="" class="btn button-clear button-back js-form-step-back" data-step="01">Назад</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--/form tab login-->
+                <!--form tab reg-->
+                <div class="frm-inner-wrap js-tab-block" data-tab="tab-reg">
+                    <form id="form-reg" action="/" class="frm-wrap">
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <div class="frm-field-input js-input">
+                                    <label class="field-title">Ф.И.О *</label>
+                                    <input type="text" class="form-input">
+                                    <div class="field-error">Вы неверно ввели имя</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <div class="frm-field-input js-input">
+                                    <label class="field-title">E-mail *</label>
+                                    <input type="email" class="form-input">
+                                    <div class="field-error">Вы неверно ввели email</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <div class="frm-field-input js-input">
+                                    <label class="field-title">Телефон *</label>
+                                    <input type="tel" class="form-input">
+                                    <div class="field-error">Вы неверно ввели телефон</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <div class="frm-field-input js-input inp-error field-password">
+                                    <label class="field-title">Пароль</label>
+                                    <input type="password" class="form-input" value="test123">
+                                    <a href="" class="btn-action-ico ico-view field-button-view js-password-toggle"></a>
+                                    <div class="field-error">Вы неверно ввели пароль</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <div class="frm-field-input js-input field-password">
+                                    <label class="field-title">Подтверждение пароля *</label>
+                                    <input type="password" class="form-input" value="">
+                                    <a href="" class="btn-action-ico ico-view field-button-view js-password-toggle"></a>
+                                    <div class="field-error">Вы неверно ввели пароль</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-row-submit">
+                            <div class="frm-field">
+                                <button type="submit" class="btn button-border">Зарегистрироваться</button>
+                            </div>
+                            <div class="frm-field">
+                                <div class="frm-info">Нажимая на кнопку “войти” вы даете согласие на <br><a href="" class="link-main">обработку персональных данных</a></div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="frm-message-wrap">
+                        <div class="text-outer-wrap">
+                            <div class="elm-ico">
+                                <img src="./img/icons/check.svg" alt="">
+                            </div>
+                            <div class="frm-title">Вы успешно зарегистрировались!</div>
+                            <a href="" class="btn button-border">Перейти в личный кабинет</a>
+                        </div>
+                    </div>
+                </div>
+                <!--/form tab reg-->
+            </div>
+            <!--/page-form-box-->
+
+        </div>
+        <!-- /page -->
+
+    </div>
+    <!-- /wrap -->
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/jquery.swipebox.min.js"></script>
+    <script src="./js/jquery.maskedinput.min.js"></script>
+    <script src="./js/scripts.js"></script>
+
+</body>
+
+</html>

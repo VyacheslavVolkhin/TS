@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Главная</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/swipebox.min.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+</head>
+
+<body>
+    <!-- wrap -->
+    <div class="wrap wrap-inner">
+
+
+        <!-- header -->
+        <header class="header">
+            <div class="inner-wrap">
+                <div class="logo-wrap">
+                    <a href="" class="logo">
+                        <img src="./img/main/logo-main.svg" alt="">
+                    </a>
+                </div>
+                <div class="popup-menu-wrap js-popup-wrap">
+                    <a href="" class="btn-popup btn-action-ico ico-menu js-btn-toggle"></a>
+                    <div class="popup-content-block js-popup-block">
+                        <div class="menu-inner-panel">
+                            <div class="search-wrap">
+                                <form action="/" class="frm-main-search">
+                                    <input type="text" class="form-input" placeholder="Поиск">
+                                </form>
+                            </div>
+                            <div class="menu-wrap">
+                                <ul class="menu">
+                                    <li class="menu-catalog"><a href="" class="btn-menu-main">Каталог товаров</a></li>
+                                    <li><a href="" class="btn-menu-main">Акции</a></li>
+                                    <li><a href="" class="btn-menu-main">Доставка и оплата</a></li>
+                                    <li><a href="" class="btn-menu-main">Контакты</a></li>
+                                </ul>
+                            </div>
+                            <div class="links-wrap">
+                                <div class="link-wrap">
+                                    <a href="">Политика конфиденциальности</a>
+                                </div>
+                                <div class="link-wrap">
+                                    <a href="">Пользовательское соглашение</a>
+                                </div>
+                            </div>
+                            <div class="soc-wrap">
+                                <a href="" class="btn-action-ico button-soc">
+                                    <img src="./img/icons/soc01.svg" alt="">
+                                </a>
+                                <a href="" class="btn-action-ico button-soc">
+                                    <img src="./img/icons/soc02.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="info-wrap">
+                                <p>2022 г. ТеплоСервис. Все права защищены</p>
+                                <p><a href="" class="logo-s"><img src="./img/main/logo-s.svg" alt=""></a></p>
+                            </div>
+                        </div>
+                        <div class="menu-actions-panel">
+                            <a href="" class="btn-menu">
+                                <span class="button-ico">
+                                    <img src="./img/icons/menu-home.svg" alt="">
+                                </span>
+                                <span class="button-title">Главная</span>
+                            </a>
+                            <a href="" class="btn-menu">
+                                <span class="button-ico">
+                                    <img src="./img/icons/menu-user.svg" alt="">
+                                </span>
+                                <span class="button-title">Кабинет</span>
+                            </a>
+                            <a href="" class="btn-menu">
+                                <span class="button-ico">
+                                    <img src="./img/icons/menu-fav.svg" alt="">
+                                </span>
+                                <span class="button-title">Избранное</span>
+                            </a>
+                            <a href="" class="btn-menu">
+                                <span class="button-ico">
+                                    <img src="./img/icons/menu-cart.svg" alt="">
+                                </span>
+                                <span class="button-title">Корзина</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-search-wrap js-popup-wrap">
+                    <a href="" class="btn-popup btn-action-ico ico-search js-btn-toggle"></a>
+                    <div class="popup-content-block js-popup-block">
+                        <form action="/" class="frm-main-search">
+                            <input type="text" class="form-input" placeholder="Поиск">
+                        </form>
+                    </div>
+                </div>
+                <div class="phone-wrap">
+                    <a href="tel:84012384979" class="link-phone">+7 (4012) 38-49-79</a>
+                </div>
+            </div>
+        </header>
+        <!-- /header -->
+
+        <!-- page -->
+        <div class="page-full">
+
+            <!--breadcrumbs-box-->
+            <div class="breadcrumbs-box">
+                <ol class="menu">
+                    <li><a href="">Главная</a></li>
+                    <li><a href="">Личный кабинет</a></li>
+                    <li><a href="">Текущие заказы</a></li>
+                </ol>
+            </div>
+            <!--/breadcrumbs-box-->
+
+            <!--lk-outer-wrap-->
+            <div class="lk-outer-wrap">
+
+                <!--lk-content-wrap-->
+                <div class="lk-content-wrap">
+
+                    <!--title-box-->
+                    <div class="title-box">
+                        <div class="title-wrap">
+                            <h1 class="h1-title">Текущие заказы</h1>
+                        </div>
+                    </div>
+                    <!--/title-box-->
+
+                    <!--lk-orders-box-->
+                    <div class="lk-orders-box">
+
+                        <!--lk-order-box-->
+                        <div class="lk-order-box js-popup-wrap no-close">
+                            <!--title-outer-wrap-->
+                            <div class="title-outer-wrap js-btn-toggle active">
+                                <div class="title-wrap">
+                                    <div class="lk-title">Название заказа</div>
+                                    <div class="lk-info">№2156235</div>
+                                </div>
+                                <div class="title-wrap">
+                                    <div class="lk-title">Дата</div>
+                                    <div class="lk-info">30.10.2022</div>
+                                </div>
+                                <div class="title-wrap">
+                                    <div class="lk-title">Статус</div>
+                                    <div class="lk-info">
+                                        <div class="elm-status st-green">Отправлен</div>
+                                    </div>
+                                </div>
+                                <div class="title-wrap">
+                                    <div class="lk-title">Сумма</div>
+                                    <div class="lk-info">6587 ₽</div>
+                                </div>
+                                <a href="" class="btn-action-ico ico-toggle"></a>
+                            </div>
+                            <!--/title-outer-wrap-->
+                            <!--items-outer-wrap-->
+                            <div class="items-outer-wrap js-popup-block">
+                                <div class="items-title-wrap">
+                                    <div class="title-wrap">Товар</div>
+                                    <div class="title-wrap">Артикул</div>
+                                    <div class="title-wrap">Кол-во</div>
+                                    <div class="title-wrap">Цена</div>
+                                </div>
+                                <div class="items-wrap">
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="item-tile-order">
+                                            <div class="tile-inner-wrap">
+                                                <div class="tile-photo-wrap">
+                                                    <a href="" class="tile-photo photo-contain">
+                                                        <img src="./img/order.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="tile-title-wrap">
+                                                    <div class="tile-title">
+                                                        <a href="">Ванна акриловая <br> KERRA EMPIRE SOLO</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tile-info-wrap" data-title="Артикул">
+                                                <div class="tile-info">CS027</div>
+                                            </div>
+                                            <div class="tile-count-wrap" data-title="Кол-во">
+                                                <div class="tile-count">1 шт.</div>
+                                            </div>
+                                            <div class="tile-price-wrap" data-title="Цена">
+                                                <div class="tile-price">12 345 ₽</div>
+                                                <div class="tile-price price-old">14 947₽</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="item-tile-order">
+                                            <div class="tile-inner-wrap">
+                                                <div class="tile-photo-wrap">
+                                                    <a href="" class="tile-photo photo-contain">
+                                                        <img src="./img/order.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="tile-title-wrap">
+                                                    <div class="tile-title">
+                                                        <a href="">Ванна акриловая <br> KERRA EMPIRE SOLO</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tile-info-wrap" data-title="Артикул">
+                                                <div class="tile-info">CS027</div>
+                                            </div>
+                                            <div class="tile-count-wrap" data-title="Кол-во">
+                                                <div class="tile-count">1 шт.</div>
+                                            </div>
+                                            <div class="tile-price-wrap" data-title="Цена">
+                                                <div class="tile-price">12 345 ₽</div>
+                                                <div class="tile-price price-old">14 947₽</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="item-tile-order">
+                                            <div class="tile-inner-wrap">
+                                                <div class="tile-photo-wrap">
+                                                    <a href="" class="tile-photo photo-contain">
+                                                        <img src="./img/order.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="tile-title-wrap">
+                                                    <div class="tile-title">
+                                                        <a href="">Ванна акриловая <br> KERRA EMPIRE SOLO</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tile-info-wrap" data-title="Артикул">
+                                                <div class="tile-info">CS027</div>
+                                            </div>
+                                            <div class="tile-count-wrap" data-title="Кол-во">
+                                                <div class="tile-count">1 шт.</div>
+                                            </div>
+                                            <div class="tile-price-wrap" data-title="Цена">
+                                                <div class="tile-price">12 345 ₽</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                </div>
+                            </div>
+                            <!--/items-outer-wrap-->
+                        </div>
+                        <!--/lk-order-box-->
+                        <!--lk-order-box-->
+                        <div class="lk-order-box js-popup-wrap no-close">
+                            <!--title-outer-wrap-->
+                            <div class="title-outer-wrap js-btn-toggle">
+                                <div class="title-wrap">
+                                    <div class="lk-title">Название заказа</div>
+                                    <div class="lk-info">№2156235</div>
+                                </div>
+                                <div class="title-wrap">
+                                    <div class="lk-title">Дата</div>
+                                    <div class="lk-info">30.10.2022</div>
+                                </div>
+                                <div class="title-wrap">
+                                    <div class="lk-title">Статус</div>
+                                    <div class="lk-info">
+                                        <div class="elm-status st-green">Отправлен</div>
+                                    </div>
+                                </div>
+                                <div class="title-wrap">
+                                    <div class="lk-title">Сумма</div>
+                                    <div class="lk-info">6587 ₽</div>
+                                </div>
+                                <a href="" class="btn-action-ico ico-toggle"></a>
+                            </div>
+                            <!--/title-outer-wrap-->
+                            <!--items-outer-wrap-->
+                            <div class="items-outer-wrap js-popup-block">
+                                <div class="items-title-wrap">
+                                    <div class="title-wrap">Товар</div>
+                                    <div class="title-wrap">Артикул</div>
+                                    <div class="title-wrap">Кол-во</div>
+                                    <div class="title-wrap">Цена</div>
+                                </div>
+                                <div class="items-wrap">
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="item-tile-order">
+                                            <div class="tile-inner-wrap">
+                                                <div class="tile-photo-wrap">
+                                                    <a href="" class="tile-photo photo-contain">
+                                                        <img src="./img/order.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="tile-title-wrap">
+                                                    <div class="tile-title">
+                                                        <a href="">Ванна акриловая <br> KERRA EMPIRE SOLO</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tile-info-wrap" data-title="Артикул">
+                                                <div class="tile-info">CS027</div>
+                                            </div>
+                                            <div class="tile-count-wrap" data-title="Кол-во">
+                                                <div class="tile-count">1 шт.</div>
+                                            </div>
+                                            <div class="tile-price-wrap" data-title="Цена">
+                                                <div class="tile-price">12 345 ₽</div>
+                                                <div class="tile-price price-old">14 947₽</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="item-tile-order">
+                                            <div class="tile-inner-wrap">
+                                                <div class="tile-photo-wrap">
+                                                    <a href="" class="tile-photo photo-contain">
+                                                        <img src="./img/order.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="tile-title-wrap">
+                                                    <div class="tile-title">
+                                                        <a href="">Ванна акриловая <br> KERRA EMPIRE SOLO</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tile-info-wrap" data-title="Артикул">
+                                                <div class="tile-info">CS027</div>
+                                            </div>
+                                            <div class="tile-count-wrap" data-title="Кол-во">
+                                                <div class="tile-count">1 шт.</div>
+                                            </div>
+                                            <div class="tile-price-wrap" data-title="Цена">
+                                                <div class="tile-price">12 345 ₽</div>
+                                                <div class="tile-price price-old">14 947₽</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="item-tile-order">
+                                            <div class="tile-inner-wrap">
+                                                <div class="tile-photo-wrap">
+                                                    <a href="" class="tile-photo photo-contain">
+                                                        <img src="./img/order.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="tile-title-wrap">
+                                                    <div class="tile-title">
+                                                        <a href="">Ванна акриловая <br> KERRA EMPIRE SOLO</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tile-info-wrap" data-title="Артикул">
+                                                <div class="tile-info">CS027</div>
+                                            </div>
+                                            <div class="tile-count-wrap" data-title="Кол-во">
+                                                <div class="tile-count">1 шт.</div>
+                                            </div>
+                                            <div class="tile-price-wrap" data-title="Цена">
+                                                <div class="tile-price">12 345 ₽</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                </div>
+                            </div>
+                            <!--/items-outer-wrap-->
+                        </div>
+                        <!--/lk-order-box-->
+                        <!--lk-order-box-->
+                        <div class="lk-order-box js-popup-wrap no-close">
+                            <!--title-outer-wrap-->
+                            <div class="title-outer-wrap js-btn-toggle">
+                                <div class="title-wrap">
+                                    <div class="lk-title">Название заказа</div>
+                                    <div class="lk-info">№2156235</div>
+                                </div>
+                                <div class="title-wrap">
+                                    <div class="lk-title">Дата</div>
+                                    <div class="lk-info">30.10.2022</div>
+                                </div>
+                                <div class="title-wrap">
+                                    <div class="lk-title">Статус</div>
+                                    <div class="lk-info">
+                                        <div class="elm-status st-green">Отправлен</div>
+                                    </div>
+                                </div>
+                                <div class="title-wrap">
+                                    <div class="lk-title">Сумма</div>
+                                    <div class="lk-info">6587 ₽</div>
+                                </div>
+                                <a href="" class="btn-action-ico ico-toggle"></a>
+                            </div>
+                            <!--/title-outer-wrap-->
+                            <!--items-outer-wrap-->
+                            <div class="items-outer-wrap js-popup-block">
+                                <div class="items-title-wrap">
+                                    <div class="title-wrap">Товар</div>
+                                    <div class="title-wrap">Артикул</div>
+                                    <div class="title-wrap">Кол-во</div>
+                                    <div class="title-wrap">Цена</div>
+                                </div>
+                                <div class="items-wrap">
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="item-tile-order">
+                                            <div class="tile-inner-wrap">
+                                                <div class="tile-photo-wrap">
+                                                    <a href="" class="tile-photo photo-contain">
+                                                        <img src="./img/order.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="tile-title-wrap">
+                                                    <div class="tile-title">
+                                                        <a href="">Ванна акриловая <br> KERRA EMPIRE SOLO</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tile-info-wrap" data-title="Артикул">
+                                                <div class="tile-info">CS027</div>
+                                            </div>
+                                            <div class="tile-count-wrap" data-title="Кол-во">
+                                                <div class="tile-count">1 шт.</div>
+                                            </div>
+                                            <div class="tile-price-wrap" data-title="Цена">
+                                                <div class="tile-price">12 345 ₽</div>
+                                                <div class="tile-price price-old">14 947₽</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="item-tile-order">
+                                            <div class="tile-inner-wrap">
+                                                <div class="tile-photo-wrap">
+                                                    <a href="" class="tile-photo photo-contain">
+                                                        <img src="./img/order.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="tile-title-wrap">
+                                                    <div class="tile-title">
+                                                        <a href="">Ванна акриловая <br> KERRA EMPIRE SOLO</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tile-info-wrap" data-title="Артикул">
+                                                <div class="tile-info">CS027</div>
+                                            </div>
+                                            <div class="tile-count-wrap" data-title="Кол-во">
+                                                <div class="tile-count">1 шт.</div>
+                                            </div>
+                                            <div class="tile-price-wrap" data-title="Цена">
+                                                <div class="tile-price">12 345 ₽</div>
+                                                <div class="tile-price price-old">14 947₽</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="item-tile-order">
+                                            <div class="tile-inner-wrap">
+                                                <div class="tile-photo-wrap">
+                                                    <a href="" class="tile-photo photo-contain">
+                                                        <img src="./img/order.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="tile-title-wrap">
+                                                    <div class="tile-title">
+                                                        <a href="">Ванна акриловая <br> KERRA EMPIRE SOLO</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tile-info-wrap" data-title="Артикул">
+                                                <div class="tile-info">CS027</div>
+                                            </div>
+                                            <div class="tile-count-wrap" data-title="Кол-во">
+                                                <div class="tile-count">1 шт.</div>
+                                            </div>
+                                            <div class="tile-price-wrap" data-title="Цена">
+                                                <div class="tile-price">12 345 ₽</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                </div>
+                            </div>
+                            <!--/items-outer-wrap-->
+                        </div>
+                        <!--/lk-order-box-->
+                        <!--lk-order-box-->
+                        <div class="lk-order-box js-popup-wrap no-close">
+                            <!--title-outer-wrap-->
+                            <div class="title-outer-wrap js-btn-toggle">
+                                <div class="title-wrap">
+                                    <div class="lk-title">Название заказа</div>
+                                    <div class="lk-info">№2156235</div>
+                                </div>
+                                <div class="title-wrap">
+                                    <div class="lk-title">Дата</div>
+                                    <div class="lk-info">30.10.2022</div>
+                                </div>
+                                <div class="title-wrap">
+                                    <div class="lk-title">Статус</div>
+                                    <div class="lk-info">
+                                        <div class="elm-status st-green">Отправлен</div>
+                                    </div>
+                                </div>
+                                <div class="title-wrap">
+                                    <div class="lk-title">Сумма</div>
+                                    <div class="lk-info">6587 ₽</div>
+                                </div>
+                                <a href="" class="btn-action-ico ico-toggle"></a>
+                            </div>
+                            <!--/title-outer-wrap-->
+                            <!--items-outer-wrap-->
+                            <div class="items-outer-wrap js-popup-block">
+                                <div class="items-title-wrap">
+                                    <div class="title-wrap">Товар</div>
+                                    <div class="title-wrap">Артикул</div>
+                                    <div class="title-wrap">Кол-во</div>
+                                    <div class="title-wrap">Цена</div>
+                                </div>
+                                <div class="items-wrap">
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="item-tile-order">
+                                            <div class="tile-inner-wrap">
+                                                <div class="tile-photo-wrap">
+                                                    <a href="" class="tile-photo photo-contain">
+                                                        <img src="./img/order.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="tile-title-wrap">
+                                                    <div class="tile-title">
+                                                        <a href="">Ванна акриловая <br> KERRA EMPIRE SOLO</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tile-info-wrap" data-title="Артикул">
+                                                <div class="tile-info">CS027</div>
+                                            </div>
+                                            <div class="tile-count-wrap" data-title="Кол-во">
+                                                <div class="tile-count">1 шт.</div>
+                                            </div>
+                                            <div class="tile-price-wrap" data-title="Цена">
+                                                <div class="tile-price">12 345 ₽</div>
+                                                <div class="tile-price price-old">14 947₽</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="item-tile-order">
+                                            <div class="tile-inner-wrap">
+                                                <div class="tile-photo-wrap">
+                                                    <a href="" class="tile-photo photo-contain">
+                                                        <img src="./img/order.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="tile-title-wrap">
+                                                    <div class="tile-title">
+                                                        <a href="">Ванна акриловая <br> KERRA EMPIRE SOLO</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tile-info-wrap" data-title="Артикул">
+                                                <div class="tile-info">CS027</div>
+                                            </div>
+                                            <div class="tile-count-wrap" data-title="Кол-во">
+                                                <div class="tile-count">1 шт.</div>
+                                            </div>
+                                            <div class="tile-price-wrap" data-title="Цена">
+                                                <div class="tile-price">12 345 ₽</div>
+                                                <div class="tile-price price-old">14 947₽</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                    <!--item wrap-->
+                                    <div class="item-wrap">
+                                        <div class="item-tile-order">
+                                            <div class="tile-inner-wrap">
+                                                <div class="tile-photo-wrap">
+                                                    <a href="" class="tile-photo photo-contain">
+                                                        <img src="./img/order.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="tile-title-wrap">
+                                                    <div class="tile-title">
+                                                        <a href="">Ванна акриловая <br> KERRA EMPIRE SOLO</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tile-info-wrap" data-title="Артикул">
+                                                <div class="tile-info">CS027</div>
+                                            </div>
+                                            <div class="tile-count-wrap" data-title="Кол-во">
+                                                <div class="tile-count">1 шт.</div>
+                                            </div>
+                                            <div class="tile-price-wrap" data-title="Цена">
+                                                <div class="tile-price">12 345 ₽</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/item wrap-->
+                                </div>
+                            </div>
+                            <!--/items-outer-wrap-->
+                        </div>
+                        <!--/lk-order-box-->
+
+                    </div>
+                    <!--/lk-orders-box-->
+
+                </div>
+                <!--/lk-content-wrap-->
+
+                <!--lk-side-wrap-->
+                <div class="lk-side-wrap">
+
+                    <div class="popup-side-menu-wrap js-popup-wrap">
+                        <a href="" class="btn-popup js-btn-toggle">Меню</a>
+                        <div class="popup-content-block js-popup-block">
+                            <a href="" class="btn-popup-close btn-action-ico ico-close js-btn-close"></a>
+                            <div class="page-menu-wrap">
+                                <ul class="menu">
+                                    <li>
+                                        <a href="" class="btn-action-menu button-arrow">
+                                            <span class="button-ico">
+                                                <img src="./img/icons/lk-menu01.svg" alt="">
+                                            </span>
+                                            <span class="button-title">Личные данные</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="btn-action-menu button-arrow active">
+                                            <span class="button-ico">
+                                                <img src="./img/icons/lk-menu02.svg" alt="">
+                                            </span>
+                                            <span class="button-title">Текущие заказы <span class="button-count">4</span></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="btn-action-menu button-arrow">
+                                            <span class="button-ico">
+                                                <img src="./img/icons/lk-menu03.svg" alt="">
+                                            </span>
+                                            <span class="button-title">История заказов <span class="button-count">4</span></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="btn-action-menu button-arrow">
+                                            <span class="button-ico">
+                                                <img src="./img/icons/lk-menu04.svg" alt="">
+                                            </span>
+                                            <span class="button-title">Вы смотрели <span class="button-count">1</span></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="btn-action-menu button-arrow">
+                                            <span class="button-ico">
+                                                <img src="./img/icons/lk-menu05.svg" alt="">
+                                            </span>
+                                            <span class="button-title">Избранное <span class="button-count">10</span></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="btn-action-menu button-arrow">
+                                            <span class="button-ico">
+                                                <img src="./img/icons/lk-menu06.svg" alt="">
+                                            </span>
+                                            <span class="button-title">Корзина <span class="button-count">10</span></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="btn-action-menu button-arrow">
+                                            <span class="button-ico">
+                                                <img src="./img/icons/lk-menu07.svg" alt="">
+                                            </span>
+                                            <span class="button-title">Смена пароля</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="btn-action-menu">
+                                            <span class="button-ico">
+                                                <img src="./img/icons/lk-menu08.svg" alt="">
+                                            </span>
+                                            <span class="button-title">Выйти</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/lk-side-wrap-->
+
+            </div>
+            <!--/lk-outer-wrap-->
+
+        </div>
+        <!-- /page -->
+
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="inner-wrap">
+                <div class="footer-top-panel">
+                    <div class="logo-wrap">
+                        <a href="" class="logo">
+                            <img src="./img/main/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="form-outer-wrap">
+                        <div class="form-title">Подпишитесь на&nbsp;наши&nbsp;новинки</div>
+                        <div class="form-wrap">
+                            <div class="frm-row">
+                                <div class="frm-field field-input">
+                                    <input type="email" class="form-input" placeholder="E-mail">
+                                </div>
+                                <div class="frm-field field-button">
+                                    <button type="submit" class="btn button-border">Подписаться</button>
+                                </div>
+                            </div>
+                            <div class="frm-info">При нажатии на кнопку “подписаться” вы даете согласие на <a href="" class="link-main">обработку персональных данных</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-main-panel">
+                    <div class="contacts-outer-wrap">
+                        <div class="cnt-wrap">
+                            <div class="elm-ico">
+                                <img src="./img/icons/footer-shedule.svg" alt="">
+                            </div>
+                            <p>Время работы:</p>
+                            <p>пн-пт - 9:00 -19:00,</p>
+                            <p>сб - 9:00 - 17:00, вс - 10:00-15:00</p>
+                        </div>
+                        <div class="cnt-wrap">
+                            <div class="elm-ico">
+                                <img src="./img/icons/footer-location.svg" alt="">
+                            </div>
+                            <p>Калининград, ул.Лесопильная, 81</p>
+                        </div>
+                        <div class="cnt-wrap">
+                            <div class="elm-ico">
+                                <img src="./img/icons/footer-email.svg" alt="">
+                            </div>
+                            <p><a href="mailto:koleso.39@yandex.ru">koleso.39@yandex.ru</a></p>
+                        </div>
+                        <div class="cnt-wrap">
+                            <div class="elm-ico">
+                                <img src="./img/icons/footer-phone.svg" alt="">
+                            </div>
+                            <p><a href="tel:84012384979">+7 (4012) 38-49-79</a></p>
+                        </div>
+                    </div>
+                    <div class="menu-outer-wrap">
+                        <div class="menu-wrap">
+                            <ul class="menu">
+                                <li>
+                                    <a href="">Продукция</a>
+                                    <ul>
+                                        <li><a href="">Каталог товаров</a></li>
+                                        <li><a href="">Акции</a></li>
+                                        <li><a href="">Доставка и оплата</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">Компания</a>
+                                    <ul>
+                                        <li><a href="">Контакты</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">Документы</a>
+                                    <ul>
+                                        <li><a href="">Политика конфиденциальности</a></li>
+                                        <li><a href="">Пользовательское соглашение</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="info-outer-wrap">
+                            <div class="soc-wrap">
+                                <a href="" class="btn-action-ico button-soc">
+                                    <img src="./img/icons/soc-light01.svg" alt="">
+                                </a>
+                                <a href="" class="btn-action-ico button-soc">
+                                    <img src="./img/icons/soc-light02.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="info-wrap">
+                                <p>2022 г. ТеплоСервис. Все права защищены</p>
+                                <p><a href="" class="logo-s"><img src="./img/main/logo-s.svg" alt=""></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+
+    </div>
+    <!-- /wrap -->
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/jquery.swipebox.min.js"></script>
+    <script src="./js/jquery.maskedinput.min.js"></script>
+    <script src="./js/scripts.js"></script>
+
+</body>
+
+</html>
