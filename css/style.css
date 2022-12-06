@@ -3,7 +3,7 @@
   --clr-base: #000000;
   --clr-text: #222;
   --clr-att: #FF8E01;
-  --clr-att-hover: #FF5555;
+  --clr-att-hover: #f5aa4c;
   --clr-light: #e4e4e;
   --clr-border: #EAEAEA;
   --min: 375px;
@@ -3580,6 +3580,10 @@ select::-ms-expand {
   min-height: 50px;
   padding: 0 40px;
   padding: 0 4rem;
+}
+.btn:not([class*="button"]):hover {
+  background-color: var(--clr-att-hover);
+  border-color: var(--clr-att-hover);
 }
 .btn.button-second:not(:hover) {
   border-color: #EEEEEE;

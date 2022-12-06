@@ -63,6 +63,12 @@ select::-ms-expand {
     height: 6rem;
     min-height: 50px;
     padding: 0 4rem;
+    &:not([class*="button"]) {
+        &:hover {
+            background-color: var(--clr-att-hover);
+            border-color: var(--clr-att-hover);
+        }
+    }
     &.button-second {
         &:not(:hover) {
             border-color: #EEEEEE;
