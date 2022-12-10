@@ -57,6 +57,32 @@ li {
         background-color: currentColor;
     }
 }
+ol {
+    counter-reset: li; 
+    list-style: none;
+    li {
+    	position: relative;
+        padding-left: 20px;
+    	&:before {
+    		content: counter(li) '.'; 
+			counter-increment: li; 
+            border-radius: 0;
+            background-color: transparent;
+            display: block;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: auto;
+            color: inherit;
+    	}
+        &:nth-child(9)~li:before {
+            content: counter(li) '.';
+        }
+    }
+}
 .list-columns {
     columns: 2;
     column-gap: 30px;
@@ -102,6 +128,11 @@ h6, .h6-title {
     margin: 0.7em 0;
     &:first-child {
         margin-top: 0;
+    }
+    .title-light {
+        display: inline;
+        font-weight: inherit;
+        opacity: 0.5;
     }
 }
 h1, .h1-title {

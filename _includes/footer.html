@@ -97,3 +97,185 @@
 	</div>
 </footer>
 <!-- /footer -->
+
+
+<!--actions-panel-box-->
+<div class="actions-panel-box">
+	<a href="" class="btn-action-ico button-action">
+		<img src="./img/icons/action01.svg" alt="">
+	</a>
+	<a href="" class="btn-action-ico button-action">
+		<img src="./img/icons/action02.svg" alt="">
+	</a>
+	<a href="" class="btn-action-ico button-action">
+		<img src="./img/icons/action03.svg" alt="">
+	</a>
+</div><!--/actions-panel-box-->
+
+
+<!--popup-outer-box-->
+<div class="popup-outer-box" id="popup-cart-share">
+	<div class="popup-box">
+		<a href="" class="btn-action-ico ico-close js-popup-close"></a>
+		<div class="popup-content-wrap">
+			<div class="title-wrap">
+				<div class="popup-title">Поделиться корзиной</div>
+				<p>Просто отправьте ссылку, и получатель сможет открыть список товаров из вашей текущей корзины</p>
+			</div>
+			<div class="popup-action">
+				<a href="" class="btn button-border button-link-copy js-btn-tgl" data-title="Скопировать ссылку" data-succefull="Ссылка скопирована"></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!--/popup-outer-box-->
+
+<!--popup-outer-box-->
+<div class="popup-outer-box" id="popup-cart-succefull">
+	<div class="popup-box popup-large">
+		<a href="" class="btn-action-ico ico-close js-popup-close"></a>
+		<div class="popup-content-wrap text-center">
+			<div class="title-wrap">
+				<div class="elm-ico">
+					<img src="./img/icons/check.svg" alt="">
+				</div>
+				<div class="popup-title">Благодарим, <br>ваш заказ оформлен!</div>
+				<p>Наши специалисты свяжутся с вами в ближайшее время, для уточнения деталей заказа</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!--/popup-outer-box-->
+
+<!--popup-outer-box-->
+<div class="popup-outer-box" id="popup-cart-form">
+	<div class="popup-box popup-form">
+		<a href="" class="btn-action-ico ico-close js-popup-close"></a>
+		<div class="popup-content-wrap text-center">
+			<div class="frm-tabs-wrap js-tabs-nav">
+				<ul class="menu">
+					<li><a href="" class="btn button-tab active" data-tab="tab-popup-login">Юр. лицо</a></li>
+					<li><a href="" class="btn button-tab" data-tab="tab-popup-reg">Физ. лицо</a></li>
+				</ul>
+			</div>
+			<!--form tab login-->
+			<div class="frm-inner-wrap js-tab-block" data-tab="tab-popup-login">
+				<div class="title-wrap">
+					<div class="popup-title">Заполните данные <br> и&nbsp;мы с&nbsp;вами свяжемся</div>
+				</div>
+				<form action="/" class="frm-wrap">
+					<div class="frm-row">
+						<div class="frm-field">
+							<div class="frm-field-input js-input">
+								<label class="field-title">Наименование организации *</label>
+								<input type="text" class="form-input" required>
+								<div class="field-error">Вы неверно ввели имя</div>
+							</div>
+						</div>
+					</div>
+					<div class="frm-row row-select">
+						<div class="frm-field">
+							<div class="frm-select-button">
+								<input type="radio" name="b01" id="b01-01" checked>
+								<label for="b01-01">ИП *</label>
+							</div>
+							<div class="frm-select-button">
+								<input type="radio" name="b01" id="b01-02">
+								<label for="b01-02">ООО *</label>
+							</div>
+						</div>
+					</div>
+					<div class="frm-row">
+						<div class="frm-field">
+							<div class="frm-field-input js-input">
+								<label class="field-title">ИНН *</label>
+								<input type="text" class="form-input" required>
+								<div class="field-error">Вы неверно ввели ИНН</div>
+							</div>
+						</div>
+					</div>
+					<div class="frm-row">
+						<div class="frm-field">
+							<div class="frm-field-input js-input">
+								<label class="field-title">Телефон *</label>
+								<input type="tel" class="form-input">
+								<div class="field-error">Вы неверно ввели телефон</div>
+							</div>
+						</div>
+					</div>
+					<div class="frm-row">
+						<div class="frm-field">
+							<div class="frm-field-input js-input">
+								<label class="field-title">E-mail *</label>
+								<input type="email" class="form-input" required>
+								<div class="field-error">Вы неверно ввели email</div>
+							</div>
+						</div>
+					</div>
+					<div class="frm-row-submit">
+						<div class="frm-field field-button">
+							<button type="submit" class="btn">Отправить</button>
+						</div>
+						<div class="frm-field field-info">Нажимая на кнопку “отправить” вы даете согласие на <a href="" class="link-main">обработку персональных данных</a></div>
+					</div>
+				</form>
+			</div>
+			<!--/form tab login-->
+			<!--form tab login-->
+			<div class="frm-inner-wrap js-tab-block" data-tab="tab-popup-reg">
+				<div class="title-wrap">
+					<div class="popup-title">Заполните данные <br> и&nbsp;мы с&nbsp;вами свяжемся</div>
+				</div>
+				<form action="/" class="frm-wrap">
+					<div class="frm-row">
+						<div class="frm-field">
+							<div class="frm-field-input js-input">
+								<label class="field-title">Ф.И.О *</label>
+								<input type="text" class="form-input" required>
+								<div class="field-error">Вы неверно ввели Ф.И.О</div>
+							</div>
+						</div>
+					</div>
+					<div class="frm-row">
+						<div class="frm-field">
+							<div class="frm-field-input js-input">
+								<label class="field-title">Телефон *</label>
+								<input type="tel" class="form-input">
+								<div class="field-error">Вы неверно ввели телефон</div>
+							</div>
+						</div>
+					</div>
+					<div class="frm-row">
+						<div class="frm-field">
+							<div class="frm-field-input js-input">
+								<label class="field-title">E-mail *</label>
+								<input type="email" class="form-input" required>
+								<div class="field-error">Вы неверно ввели email</div>
+							</div>
+						</div>
+					</div>
+					<div class="frm-row row-select">
+						<div class="frm-field">
+							<div class="frm-select-button select-large">
+								<input type="radio" name="b02" id="b02-01" checked>
+								<label for="b02-01">Доставка</label>
+							</div>
+							<div class="frm-select-button select-large">
+								<input type="radio" name="b02" id="b02-02">
+								<label for="b02-02">Самовывоз</label>
+							</div>
+						</div>
+					</div>
+					<div class="frm-row-submit">
+						<div class="frm-field field-button">
+							<button type="submit" class="btn">Отправить</button>
+						</div>
+						<div class="frm-field field-info">Нажимая на кнопку “отправить” вы даете согласие на <a href="" class="link-main">обработку персональных данных</a></div>
+					</div>
+				</form>
+			</div>
+			<!--/form tab login-->
+		</div>
+	</div>
+</div>
+<!--/popup-outer-box-->

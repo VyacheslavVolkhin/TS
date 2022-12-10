@@ -10,6 +10,9 @@ html, body {
 }
 body {
     //min-height: -webkit-fill-available;
+    &.menu-active {
+        overflow: hidden;
+    }
 }
 html {
     //height: -webkit-fill-available;
@@ -66,6 +69,11 @@ html {
 .wrap-inner {
     padding-top: 71px;
 }
+body:not(.header-fix) .wrap-header-transparent {
+    .header {
+        background-color: transparent;
+    }
+}   
 .nav,
 .header,
 .footer {
@@ -272,6 +280,9 @@ html {
         
     }
 }
+.wrap:not(.wrap-main) .header {
+    background-color: #fff;
+}
 .header {
     z-index: 99;
     position: fixed;
@@ -396,7 +407,23 @@ html {
         width: 100%;
     }
 }
+.actions-panel-box {
+    width: 48px;
+    position: fixed;
+    top: 20.4rem;
+    right: 0;
+    z-index: 80;
+    .btn-action-ico {
+        margin-bottom: 6px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
 @media (max-width: 1023px) {
+    body.menu-show {
+        overflow: hidden;
+    }
     .header-light:not(.header-fix) {
         .popup-menu-wrap {
             .btn-popup {
@@ -414,6 +441,35 @@ html {
     }
     .header {
         border-bottom: 1px solid fade(#222, 10);
+        .page-menu-wrap {
+            display: none;
+            margin: 0;
+            &.active {
+                display: block;
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 110;
+                background-color: #fff;
+            }
+            .btn-action-ico.ico-close {
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 140;
+            }
+            .menu {
+                max-height: 100%;
+                overflow: auto;
+                -ms-overflow-style: none;
+                &::-webkit-scrollbar {
+                    width: 0;
+                    height: 0;
+                }
+            }
+        }
         .inner-wrap {
             height: 70px;
             display: flex;
@@ -724,6 +780,93 @@ html {
     }
     .header {
         border-bottom: 1px solid fade(#222, 10);
+        .page-menu-wrap {
+            display: none;
+            animation: fadein ease 0.2s;
+            position: absolute;
+            min-height: 400px;
+            top: 100%;
+            left: 0;
+            right: 0;
+            max-width: 1440px;
+            margin: 0 auto;
+            z-index: 120;
+            background-color: #fff;
+            max-height: calc(100vh - 65px);
+            border-right: 1px solid var(--clr-border);
+            border-top: 1px solid var(--clr-border);
+            overflow: auto;
+            -ms-overflow-style: none;
+            &::-webkit-scrollbar {
+                width: 0;
+                height: 0;
+            }
+            &.active {
+                display: block;
+            }
+            .btn-action-ico.ico-close {
+                display: none;
+            }
+            &:before {
+                content: "";
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: -9999px;
+                right: -9999px;
+                height: 1px;
+                background-color: var(--clr-border);
+            }
+            .menu {
+                width: 32rem;
+                flex-shrink: 0;
+                overflow: visible;
+                &:before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 32rem;
+                    margin-left: -1px;
+                    width: 1px;
+                    background-color: var(--clr-border);
+                }
+                &>li {
+                    &:hover {
+                        .submenu-outer-wrap {
+                            display: block;
+                        }
+                    }
+                }
+            }
+            .submenu-outer-wrap {
+                display: none;
+                padding-left: 32rem;
+                max-width: inherit;
+                width: 100%;
+                padding-right: 0;
+                box-shadow: none;
+                height: 100%;
+                background-color: transparent;
+                overflow: auto;
+                -ms-overflow-style: none;
+                &::-webkit-scrollbar {
+                    width: 0;
+                    height: 0;
+                }
+                &:before {
+                    display: none;
+                }
+                .submenu {
+                    padding-top: 35px;
+                    max-width: 1120px;
+                    .submenu-title {
+                        padding-right: 15px;
+                    }
+                }
+            }
+        }
         .inner-wrap {
             padding-top: 0;
             padding-bottom: 0;
