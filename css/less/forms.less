@@ -904,6 +904,15 @@ select::-ms-expand {
     position: relative;
     line-height: 1;
     width: 100%;
+    &.active {
+        .form-input {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        .btn-form-clear {
+            display: block;
+        }
+    }
     .form-input {
         height: 49px;
         background: #F3F3F3 url(../img/icons/search-gray.svg) 9px center no-repeat;
@@ -919,6 +928,29 @@ select::-ms-expand {
     [placeholder]:-moz-placeholder {color: fade(#222, 30);}
     [placeholder]::-moz-placeholder {color: fade(#222, 30);}
     [placeholder]:-ms-input-placeholder {color: fade(#222, 30);}
+    .btn-form-clear {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -15px;
+        height: 30px;
+        padding: 0 15px;
+        font-size: 14px;
+        line-height: 30px;
+        float: left;
+        color: fade(#222, 50);
+        transition: all ease 0.2s;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        z-index: 5;
+        background-color: transparent;
+        display: none;
+        animation: fadein ease 0.2s;
+        &~.form-input {
+            padding-right: 100px;
+        }
+    }
 }
 .frm-field-input {
     display: block;
